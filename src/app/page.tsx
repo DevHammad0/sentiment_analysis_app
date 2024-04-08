@@ -72,7 +72,7 @@ const Home = () => {
       style={{ background: color + "aa" }}
       className="flex flex-col min-h-screen items-center p-24 gap-4 transition-all delay-500"
     >
-      <h1 className="text-2xl md:text-4xl font-bold tracking-tighter">
+      <h1 className="text-2xl text-slate-900 font-sans md:text-4xl font-extrabold tracking-tighter">
         🎨🖌️ Paint My Mood 🖌️🎨
       </h1>
       <div className="w-1/2 min-w-80 border-2 border-black p-4 rounded-xl">
