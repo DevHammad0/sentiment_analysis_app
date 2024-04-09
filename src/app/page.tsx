@@ -2,11 +2,10 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import axios from "axios";
 import { emotionConfig } from "./config";
-import { ColorRing } from "react-loader-spinner";
-import Link from "next/link";
+import { Blocks } from "react-loader-spinner";
 
 const Home = () => {
-  const defaultColor = "#cccccc";
+  const defaultColor = "#f8f8ff";
   const [rows, setrows] = useState(2);
   const [input, setInput] = useState("");
   const [output, setOutput] = useState<{ label: string; score: number }[]>();
@@ -56,26 +55,29 @@ const Home = () => {
   }
 
   function renderLoader() {
-    return <ColorRing
-    visible={true}
-    height="80"
-    width="80"
-    ariaLabel="color-ring-loading"
-    wrapperStyle={{}}
-    wrapperClass="color-ring-wrapper"
-    colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
-    />
+    return (
+      <Blocks
+        height="80"
+        width="80"
+        color="#4fa94d"
+        ariaLabel="blocks-loading"
+        wrapperStyle={{}}
+        wrapperClass="blocks-wrapper"
+        visible={true}
+      />
+    );
   }
 
   return (
     <main
       style={{ background: color + "aa" }}
-      className="flex flex-col min-h-screen items-center p-24 gap-4 transition-all delay-500"
+      className="flex flex-col min-h-screen items-center p-14 gap-4 transition-all delay-500"
     >
-      <h1 className="text-2xl text-slate-900 font-sans md:text-4xl font-extrabold tracking-tighter">
-        🎨🖌️ Paint My Mood 🖌️🎨
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tighter text-gray-800">
+        🤖 Sentiment Analyzer 🤖
       </h1>
-      <div className="w-1/2 min-w-80 border-2 border-black p-4 rounded-xl">
+
+      <div className="w-1/2 min-w-80 border-2 bg-slate-100 border-neutral-300 p-4 rounded-xl">
         <textarea
           className="outline-none resize-none block w-full text-sm bg-transparent text-slate-800"
           placeholder="type how you feel..."
@@ -83,7 +85,7 @@ const Home = () => {
           onChange={handleInputChange}
         ></textarea>
       </div>
-      <p>{"> " + input}</p>
+      <p className="w-2/3 text-center text-wrap">{"> " + input}</p>
       <div className="flex flex-wrap items-center justify-center gap-2">
         {output?.map(({ label, score }) => (
           <span
@@ -96,12 +98,6 @@ const Home = () => {
         ))}
       </div>
       {loading && renderLoader()}
-      <div className="mt-auto flex flex-col items-center">
-        <p className=" text-slate-800 font-semibold">Sentiment Analysis Project</p>
-        <h3 className="text-xs  text-slate-800">(Made by: Muhammad Hammad)</h3>
-        <br />
-        <Link href="https://www.linkedin.com/in/-hammad/" target="_blank" className="underline text-blue-900">Lets Connect</Link>
-      </div>
     </main>
   );
 };

@@ -1,6 +1,6 @@
 {
-  "name": "paint_my_mood",
-  "version": "0.1.0",
+  "name": "sentiment_analyzer",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "@huggingface/inference": "^2.6.6",
+    "@tabler/icons-react": "^3.1.0",
     "axios": "^1.6.8",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.25",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-loader-spinner": "^6.1.6"
+    "react-loader-spinner": "^6.1.6",
+    "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
     "@types/node": "^20",
