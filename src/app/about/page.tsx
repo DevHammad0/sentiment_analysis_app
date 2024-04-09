@@ -7,7 +7,7 @@ const page = () => {
         About Sentiment Analyzer
       </h2>
       <p className="m-4 md:w-1/2 p-2 md:p-4 font-sans text-justify text-slate-800 border border-gray-700 rounded-lg bg-slate-100 border-none">
-        <span className="font-semibold">Sentiment Analyzer</span> iis a
+        <span className="font-semibold">Sentiment Analyzer</span> is a
         state-of-the-art application that deciphers and visualizes the emotional
         undertones of textual content. Our platform harnesses the power of
         Hugging Face cutting-edge text classification models to conduct
@@ -21,7 +21,7 @@ const page = () => {
         such as tweets, reviews, or personal notes. Our application evaluates
         the emotional tone and instantly provides feedback with clear sentiment
         labels and corresponding emojis, offering users an immediate
-        understanding of their text’s emotional impact.
+        understanding of their texts emotional impact.
         <br />
         <br />
         But Sentiment Analyzer goes beyond mere analysis. It dynamically alters
