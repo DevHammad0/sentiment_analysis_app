@@ -80,7 +80,7 @@ const Home = () => {
       <div className="w-1/2 min-w-80 border-2 bg-slate-100 border-neutral-300 p-4 rounded-xl">
         <textarea
           className="outline-none resize-none block w-full text-sm bg-transparent text-slate-800"
-          placeholder="type how you feel..."
+          placeholder="Enter your text here..."
           rows={rows}
           onChange={handleInputChange}
         ></textarea>

@@ -26,7 +26,7 @@ const page = () => {
         <br />
         But Sentiment Analyzer goes beyond mere analysis. It dynamically alters
         the background color to align with the detected sentiment, creating an
-        immersive experience that reflects the user's mood. This feature not
+        immersive experience that reflects the users mood. This feature not
         only enhances the visual appeal but also aids in the understanding of
         the sentiment conveyed.
         <br />

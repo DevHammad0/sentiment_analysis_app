@@ -5,8 +5,8 @@ import Image from "next/image";
 // components/Footer.js
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 text-ghost-white text-center p-5">
-      <div className="flex justify-center gap-2 m-2">
+    <footer className="bg-slate-800 text-ghost-white text-center p-4">
+      <div className="flex justify-center gap-2 mb-1">
         <Link
           href="https://www.linkedin.com/in/-hammad/"
           target="_blank"
