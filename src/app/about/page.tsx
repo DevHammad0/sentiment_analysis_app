@@ -26,9 +26,9 @@ const page = () => {
         <br />
         But Sentiment Analyzer goes beyond mere analysis. It dynamically alters
         the background color to align with the detected sentiment, creating an
-        immersive experience that reflects the users mood. This feature not
-        only enhances the visual appeal but also aids in the understanding of
-        the sentiment conveyed.
+        immersive experience that reflects the users mood. This feature not only
+        enhances the visual appeal but also aids in the understanding of the
+        sentiment conveyed.
         <br />
         <br />
         Our application is perfect for individuals seeking to gain insights into
@@ -36,24 +36,30 @@ const page = () => {
         understand customer sentiment.
         <br />
         <br />
-        <span className="text-2xl font-bold text-slate-800">Key Features:</span>
+        <span className="text-2xl font-bold text-slate-800">Here how it works:</span>
+        <br /><br />
+        <strong>1. Input Text:</strong><br />Visit our platform and find the text
+        input area. Type or paste the text you want to analyze. You can enter
+        anything from tweets and reviews to personal notes.
         <br />
-        <li>
-          <span className="font-semibold">Automatic Sentiment Detection:</span>{" "}
-          No need for manual submission; the analysis begins as soon as you
-          type.
-        </li>
-        <li>
-          <span className="font-semibold">Intuitive Visual Feedback:</span>{" "}
-          Emojis and color changes provide a quick understanding of the
-          sentiment.
-        </li>
-        <li>
-          <span className="font-semibold">Real-Time Analysis:</span> Immediate
-          sentiment assessment for on-the-spot insights.
-        </li>
+        <strong>2. Instant Analysis:</strong><br />As soon as you start typing, our
+        system will begin analyzing the sentiment. No need to submit or wait;
+        its real-time!
+        <br />
+        <strong>3. Visual Feedback:</strong><br />Look for clear sentiment labels and
+        corresponding emojis. They will provide immediate insights into the
+        emotional impact of your text.
+        <br />
+        <strong>4. Background Color:</strong><br />Notice how the background color
+        dynamically changes? It aligns with the detected sentiment, enhancing
+        both aesthetics and understanding.
+        <br />
+        <strong>5. Benefit:</strong><br />Whether you here an individual seeking
+        emotional insights or a business aiming to understand customer
+        sentiment, Sentiment Analyzer has you covered.
         <br />
         <br />
+
         <span className="font-semibold">Sentiment Analyzer</span> is committed
         to delivering a seamless and engaging user experience. We continuously
         strive to improve our technology to ensure the highest accuracy and
